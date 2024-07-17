@@ -15,8 +15,8 @@ const calculateETA = ({ distance, speed }: ETAProps): string => {
 };
 
 const ETAForm: React.FC = () => {
-  const [distance, setDistance] = useState<number>();
-  const [speed, setSpeed] = useState<number>();
+  const [distance, setDistance] = useState<number>(0);
+  const [speed, setSpeed] = useState<number>(0);
   const [eta, setETA] = useState<string>('');
 
   const handleSubmit = (event: React.FormEvent) => {
